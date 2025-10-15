@@ -1,0 +1,257 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary: #a8c7fa;
+  --secondary: #ffffff;
+  --accent: #6482ad;
+  --text: #2b2b2b;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --soft-bg: linear-gradient(to bottom right, #f0f7ff, #ffffff);
+}
+
+body {
+  background: var(--soft-bg);
+  font-family: "Poppins", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background 0.5s ease, color 0.5s ease;
+  color: var(--text);
+}
+
+/* Header container (menyatukan navbar dan tombol mode) */
+header {
+  position: fixed;
+  top: 15px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  z-index: 1000;
+}
+
+/* Tombol Dark Mode */
+.mode-btn {
+  background: var(--secondary);
+  color: var(--accent);
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 40px;
+  padding: 10px 18px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px var(--shadow);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.mode-btn:hover {
+  background: var(--primary);
+  transform: scale(1.05);
+}
+
+/* Navbar */
+nav {
+  background: var(--secondary);
+  border-radius: 40px;
+  padding: 10px 25px;
+  box-shadow: 0 4px 15px var(--shadow);
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+nav a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #355070;
+}
+
+/* Card */
+.card {
+  background: var(--secondary);
+  width: 90%;
+  max-width: 850px;
+  border-radius: 20px;
+  padding: 40px;
+  margin: 100px auto 40px;
+  box-shadow: 0 8px 30px var(--shadow);
+  border: 1px solid rgba(100, 130, 173, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+  color: var(--accent);
+  text-align: center;
+  text-shadow: 1px 1px 4px rgba(100, 130, 173, 0.3);
+  margin-top: 0;
+}
+
+h2 {
+  color: var(--accent);
+  border-left: 5px solid var(--accent);
+  padding-left: 10px;
+  margin-top: 30px;
+}
+
+/* Gambar profil */
+.profil-img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--accent);
+  display: block;
+  margin: 20px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profil-img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(100, 130, 173, 0.4);
+}
+
+.contoh-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  border: 2px solid var(--accent);
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 0 10px var(--shadow);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px auto;
+  box-shadow: 2px 2px 10px var(--shadow);
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: var(--accent);
+  color: white;
+}
+
+footer {
+  text-align: center;
+  color: var(--accent);
+  margin: 20px 0 10px;
+  font-size: 14px;
+}
+
+/* Tombol umum */
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px 5px;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: #4b6587;
+  transform: scale(1.05);
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: #1b1b1b;
+  color: #f1f1f1;
+}
+
+.dark-mode header .mode-btn {
+  background: #2a2a2a;
+  color: #ffb3b3;
+}
+
+.dark-mode nav {
+  background: #2a2a2a;
+}
+
+.dark-mode nav a {
+  color: #ffb3b3;
+}
+
+.dark-mode .card {
+  background: #252525;
+  color: #f1f1f1;
+  border: 1px solid #333;
+}
+
+.dark-mode img {
+  border-color: #c0392b;
+}
+
+.dark-mode h1 {
+  color: #ffb3b3;
+  text-shadow: none;
+}
+
+.dark-mode h2 {
+  color: #ff7b7b;
+  border-left-color: #c0392b;
+}
+
+.dark-mode th {
+  background-color: #c0392b;
+}
+
+.dark-mode .btn {
+  background-color: #c0392b;
+}
+
+.dark-mode footer {
+  color: #ffb3b3;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

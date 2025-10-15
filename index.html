@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Mahasiswa - Rio Johanes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <button class="mode-btn" onclick="toggleMode()">🌙 / ☀️</button>
+      <nav>
+        <a href="#profil">Profil</a>
+        <a href="#html-css-js">HTML, CSS, JS & Tailwind</a>
+        <a href="#buat-website">Membuat Website</a>
+        <a href="#kesan-pesan">Kesan & Pesan</a>
+      </nav>
+    </header>
+
+    <div class="card" id="profil">
+      <h1>Website Profil Mahasiswa</h1>
+      <img src="241401020.jpg" alt="Foto Mahasiswa" class="profil-img" />
+
+      <h2>Identitas Diri</h2>
+      <p><b>Nama Lengkap:</b> Rio Johanes</p>
+      <p><b>NIM:</b> 241401020</p>
+      <p><b>Kom:</b> B</p>
+      <p><b>Hobi:</b> Bermain Game, dan Menonton.</p>
+      <p>
+        <b>Motto Hidup:</b>
+        <i>"Kesalahan adalah guru terbaik jika kamu mau belajar darinya."</i>
+      </p>
+
+      <h2>Perkenalan Singkat</h2>
+      <p>
+        Halo! Kenalin aku <b>Rio Johanes</b>, biasa dipanggil Nengok, aku
+        mahasiswa S1 Ilmu Komputer st 24. Aku suka belajar hal baru terutama di
+        dunia teknologi dan desain web!
+      </p>
+
+      <h2>Jadwal Kuliah</h2>
+      <button class="btn" onclick="toggleJadwal()">
+        Tampilkan / Sembunyikan
+      </button>
+      <table id="jadwal">
+        <tr>
+          <th>Hari</th>
+          <th>Mata Kuliah</th>
+          <th>Jam</th>
+          <th>Ruang</th>
+        </tr>
+        <tr>
+          <td>Senin</td>
+          <td>Desain Interaksi</td>
+          <td>10:30 - 12:10</td>
+          <td>C-101</td>
+        </tr>
+        <tr>
+          <td>Selasa</td>
+          <td>IELTS Preparation</td>
+          <td>10:30 - 12:10</td>
+          <td>D-101</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Rabu</td>
+          <td>Basis Data</td>
+          <td>10:30 - 13:00</td>
+          <td>D-106</td>
+        </tr>
+        <tr>
+          <td>Wirausaha Digital</td>
+          <td>13:50 - 15:30</td>
+          <td>D-101</td>
+        </tr>
+        <tr>
+          <td rowspan="3">Kamis</td>
+          <td>Struktur Data</td>
+          <td>08:00 - 10:30</td>
+          <td>D-105</td>
+        </tr>
+        <tr>
+          <td>Pemrograman Web</td>
+          <td>10:30 - 13:00</td>
+          <td>D-105</td>
+        </tr>
+        <tr>
+          <td>Kecerdasan Buatan</td>
+          <td>13:00 - 15:30</td>
+          <td>D-101</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Bagian penjelasan edukatif -->
+    <div class="card" id="html-css-js">
+      <h2>Mengenal HTML, CSS, JavaScript, dan Tailwind CSS</h2>
+      <p>
+        Dalam pembuatan website, ada empat komponen utama yang saling bekerja
+        sama untuk membentuk tampilan dan fungsionalitas halaman web.
+      </p>
+
+      <h3>🧱 1. HTML (HyperText Markup Language)</h3>
+      <p>
+        <b>HTML (HyperText Markup Language)</b> adalah bahasa dasar untuk
+        membuat halaman web.
+        <br />
+        HTML berfungsi untuk <b>menyusun struktur dan isi</b> dari halaman yang kamu
+        lihat di internet.
+        <br />
+        <br />
+        Bayangkan kamu ingin membangun sebuah rumah:
+        <ul>
+          <li>HTML adalah <i>kerangka dan dindingnya</i> — bentuk dasar bangunan.</li>
+        </ul>
+        <h4>✳️ Fungsi HTML:</h4>
+        <ul>
+          <li>Menentukan <b>bagian-bagian halaman</b>, seperti judul, paragraf, gambar, tabel, dan tautan.</li>
+          <li>Memberi arti pada isi halaman (disebut <b>elemen semantik</b>).</li>
+        </ul>
+        <h4>✳️ Contoh sederhana HTML:</h4>
+        <img src="contohHTML.png" alt="Contoh HTML" class="contoh-img" />
+        <h4>📝 Penjelasan:</h4>
+        <ul>
+          <li>&lt;h1&gt; untuk membuat judul besar</li>
+          <li>&lt;p&gt; untuk membuat paragraf</li>
+          <li>&lt;img&gt; untuk menampilkan gambar</li>
+        </ul>
+      </p>
+
+      <h3>🎨 2. CSS (Cascading Style Sheets) </h3>
+      <p>
+        <b>CSS (Cascading Style Sheets)</b> adalah bahasa yang digunakan untuk <b>mengatur tampilan dan gaya halaman web.</b>
+        <br>
+        <br>
+        Kalau HTML adalah kerangka rumah, maka CSS adalah <i>cat, dekorasi, dan perabotannya.</i>
+        <h4>✳️ Fungsi CSS:</h4>
+        <ul>
+          <li>Mengubah <b>warna, ukuran, jenis huruf,</b> dan <b>tata letak (layout)</b> halaman.</li>
+          <li>Membuat website terlihat lebih <b>indah </b>dan <b>rapi</b></li>
+        </ul>
+        <h4>✳️ Contoh CSS:</h4>
+        <img src="contohCSS.png" alt="Contoh CSS" class="contoh-img" />
+        <h4>📝 Penjelasan:</h4>
+        <ul>
+          <li><b>background-color</b> untuk mengubah warna latar belakang.</li>
+          <li><b>font-family</b> untuk menentukan jenis huruf.</li>
+          <li><b>color</b> dan <b>text-align</b> untuk mengatur warna serta posisi teks.</li>
+        </ul>
+      </p>
+
+      <h3>⚙️ 3. JavaScript</h3>
+      <p>
+      <b>JavaScript (JS)</b> adalah bahasa pemrograman untuk <b>membuat halaman web menjadi hidup dan interaktif.</b>
+      <br>
+      <br>
+      Kalau HTML adalah kerangka dan CSS adalah dekorasi, maka JavaScript adalah <i>otak dan sarafnya.</i>
+      <h4>✳️ Fungsi JavaScript:</h4>
+      <ul>
+        <li>Membuat elemen bisa <b>berinteraksi</b> (misalnya tombol yang bisa diklik).</li>
+        <li>Mengubah isi halaman <b>secara otomatis atau dinamis</b> tanpa harus memuat ulang.</li>
+        <li>Mengontrol <b>logika dan perilaku</b> website.</li>
+      </ul>
+      <h4>✳️ Contoh JavaScript:</h4> 
+      <img src="contohJS.png" alt="Contoh JS" class="contoh-img" />
+      <h4>📝 Penjelasan:</h4>
+      <ul>
+        <li>Saat tombol diklik, fungsi <b>ubahTeks()</b> dijalankan.</li>
+        <li>JavaScript mencari elemen dengan id <b>pesan</b> dan mengganti teksnya.</li>
+      </ul>
+      </p>
+
+      <h3>🌈 4. Tailwind CSS</h3>
+      <p>
+      <b>Tailwind CSS</b> adalah <b>framework CSS modern</b> yang membantu kamu membuat tampilan cantik dengan <b>kelas-kelas siap pakai (utility classes).</b>
+      <br>
+      <br>
+      Alih-alih menulis kode CSS panjang, kamu cukup <b>menambahkan nama class</b> ke elemen HTML.
+      <h4>✳️ Kelebihan Tailwind:</h4>
+      <ul>
+        <li><b>Cepat:</b> tidak perlu menulis file CSS panjang.</li>
+        <li><b>Konsisten:</b> gaya antar halaman seragam.</li>
+        <li><b>Responsif:</b> mudah menyesuaikan tampilan di berbagai ukuran layar (HP, tablet, laptop).</li>
+      </ul>
+      <h4>✳️ Contoh Tailwind CSS:</h4>
+      <img src="contohTailwind.png" alt="Contoh Tailwind" class="contoh-img" />
+      </p>
+      <h4>📝 Penjelasan:</h4>
+      <ul>
+        <li><b>bg-blue-500</b> membuat warna latar biru</li>
+        <li><b>text-white</b> memberi warna teks putih</li>
+        <li><b>px-4 py-2</b> memberi jarak dalam (padding)</li>
+        <li><b>rounded-lg</b> membuat sudut membulat</li>
+        <li><b>hover:bg-blue-600</b> mengubah warna saat kursor diarahkan</li>
+      </ul>
+
+      <h3>💡 Kesimpulan:</h3>
+      <p>Untuk membangun website, keempat komponen ini bekerja bersama:</p>
+      <ul>
+        <li><b>HTML</b> membuat struktur dasar halaman.</li>
+        <li><b>CSS</b> mempercantik tampilan.</li>
+        <li><b>JavaScript</b> menambahkan interaktivitas.</li>
+        <li>
+          <b>Tailwind CSS</b> mempercepat pembuatan desain dengan class siap
+          pakai.
+        </li>
+      </ul>
+    </div>
+
+    <div class="card" id="buat-website">
+      <h2>Tata Cara Membuat Website Sederhana</h2>
+      <p>
+        Membuat website tidak sesulit yang dibayangkan, lho!
+        Kamu tidak perlu langsung jago coding — cukup mulai dari hal dasar: HTML, CSS, dan JavaScript.
+        <br>
+        Ibarat membangun rumah, kamu akan mulai dari membangun rangka, mengecat dindingnya, lalu menambahkan kehidupan di dalamnya.
+        <br>
+        <br>
+        Berikut langkah-langkahnya 👇
+        <h3>🧱1. Siapkan Alat yang Dibutuhkan</h3>
+        Sebelum mulai, kamu perlu menyiapkan alat-alat kerja layaknya seorang pembangun web:
+        <ul>
+          <li><b>Text Editor</b> → tempat kamu menulis kode, seperti <i>Visual Studio Code (VS Code), Notepad++, atau Sublime Text.</i></li>
+          <li><b>Web Browser</b> → alat untuk melihat hasil kerja kamu, seperti <i>Google Chrome, Edge, atau Firefox.</i></li>
+        </ul>
+        <h3>📁2. Buat Folder Proyek Website</h3>
+        Di dalam folder ini kamu akan menyimpan semua file yang dibutuhkan website:
+        <ul>
+          <li><b>index.html</b> → untuk struktur (isi halaman)</li>
+          <li><b>style.css</b> → untuk tampilan</li>
+          <li><b>script.js</b> → untuk interaksi</li>
+        </ul>
+        <h3>🧾3. Tulis Struktur Dasar HTML</h3>
+        HTML adalah tulang atau rangka dari website.
+        <br>
+        Kamu bisa menulis kode berikut di file <b>index.html</b>:
+        <img src="strukturHTML.png" alt="Contoh Struktur HTML" class="contoh-img" />
+        Setelah disimpan, klik dua kali file index.html, dan buka di browser.
+        <h3>🎨 4. Tambahkan CSS untuk Mempercantik Tampilan</h3>
+        Agar website tidak terlihat polos, tambahkan file bernama <b>style.css</b> di folder yang sama.
+        Isi dengan kode ini:
+        <img src="CSS.png" alt="Contoh CSS" class="contoh-img" />
+        Lalu hubungkan ke HTML dengan menambahkan baris ini di bagian &lt;head&gt;:
+        <img src="linkCSS.png" alt="Contoh CSS" class="contoh-img" />
+        Sekarang tampilan websitemu akan berubah jadi lebih berwarna dan rapi.
+        <h3>⚙️ 5. Tambahkan JavaScript untuk Interaktivitas</h3>
+        Supaya websitemu lebih hidup, tambahkan file <b>script.js</b> dengan isi berikut:
+        <img src="scriptJS.png" alt="Contoh JS" class="contoh-img" />
+        Lalu di dalam HTML tambahkan tombol dan teks:
+        <img src="buttonJS.png" alt="Contoh JS" class="contoh-img" />
+        Sekarang jika kamu klik tombolnya, teks di atasnya akan berubah — tandanya JavaScript sudah bekerja!.
+        <h3>🚀 6. Jalankan dan Uji Website</h3>
+        <ul>
+          <li>Buka <b>index.html</b> di browser.</li>
+          <li>Coba klik tombol yang dibuat dengan JavaScript tadi.</li>
+          <li>Ubah warna di CSS atau teks di HTML dan lihat hasilnya secara langsung.</li>
+        </ul>
+        <h3>☁️ 7. (Opsional) Unggah ke Internet</h3>
+        Kalau kamu ingin website-mu bisa dilihat semua orang, kamu bisa:
+        <ul>
+          <li>Gunakan <b>GitHub Pages</b> (gratis dan mudah untuk pemula).</li>
+          <li>Atau platform seperti Vercel.</li>
+        </ul>
+      </p>
+    </div>
+
+    <div class="card" id="kesan-pesan">
+      <h2>Kesan dan Pesan Belajar Pemrograman Web</h2>
+      <p>
+        Belajar pemrograman web sangat menyenangkan karena kita bisa melihat
+        hasil kerja secara langsung di layar. Awalnya memang terasa sulit, tapi
+        setelah memahami struktur dan logikanya, membuat website menjadi hal
+        yang seru dan kreatif. Pesanku: jangan takut mencoba dan terus eksplor
+        ide-ide baru!
+      </p>
+    </div>
+
+    <footer>
+      <b>&copy; 2025 Website Profil Mahasiswa - Rio Johanes</b>
+    </footer>
+
+    <script>
+      // Toggle dark mode
+      function toggleMode() {
+        document.body.classList.toggle("dark-mode");
+      }
+
+      // Toggle tabel jadwal
+      function toggleJadwal() {
+        document.getElementById("jadwal").classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>
